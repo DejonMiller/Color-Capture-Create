@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background ="@drawable/background_activated"
+    >
+
+
+    <TextView
+        android:id="@+id/record_list_item_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="@color/silver"
+        android:background="@color/black_alpha_40"
+        android:text ="record title"/>
+
+    <TextView
+        android:id="@+id/record_list_item_dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_list_item_titleTextView"
+        android:paddingLeft="4dp"
+        android:background="@color/black_alpha_40"
+        android:textColor="@color/silver"
+        android:paddingRight="4dp"
+        android:text="record date"/>
+
+
+
+</RelativeLayout>

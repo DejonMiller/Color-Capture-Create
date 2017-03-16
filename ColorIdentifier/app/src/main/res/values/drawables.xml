@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name = "ic_item" type="drawable">@android:drawable/ic_menu_search</item>
+    <item name = "ic_color_add" type="drawable">@android:drawable/ic_menu_add</item>
+    <item name="ic_color_view_info" type="drawable">@android:drawable/ic_menu_info_details</item>
+    <item name="ic_color_view_fav" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name ="ic_color_close" type = "drawable">@android:drawable/ic_menu_close_clear_cancel</item>
+
+
+</resources>

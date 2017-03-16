@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/silver">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/silver">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Title"
+        android:textColor="@color/silver"
+        android:text="Colors Saved to Palette"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/Hex_View"
+        android:textColor="@color/silver"
+        android:text="here"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/RGB_View"
+        android:hint="RGB"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/HSV_View"
+        android:hint="HSV"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/HSL_View"
+                android:text="HSL:"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/silver"/>
+    <TextView
+        android:id="@+id/CMYK_View"
+        android:hint="CMYK"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/LAB_View"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/silver"
+        />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/silver"
+                android:id="@+id/XYZ_View"/>
+
+    <TextView
+        android:text="Complimentary"
+        android:gravity="center"
+        android:id="@+id/Compliment_Title"
+        android:textColor="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Complimentary_View"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/Shade_Names"
+        android:text="Tints"
+        android:textColor="@color/silver"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/Shade_0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/Shade_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/Shade_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/Shade_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/Shade_4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Tints"
+    android:textColor="@color/silver"
+    android:gravity="center"
+    android:text="Shades"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/Tint_0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/Tint_1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:id="@+id/Tint_2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/Tint_3"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:id="@+id/Tint_4"/>
+
+
+            <TextView
+        android:text="Analogous Colors"
+        android:id="@+id/Analog_Title"
+        android:textColor="@color/silver"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        />
+    <TextView
+
+        android:id="@+id/Analog_0"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+
+        android:id="@+id/Analog_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+
+        android:id="@+id/Analog_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        />
+    <TextView
+    android:gravity="center"
+        android:id="@+id/Triadic_Title"
+        android:text="Triadic Colors"
+    android:textColor="@color/silver"
+      android:layout_width="match_parent"
+     android:layout_height="match_parent"
+                />
+            <TextView
+
+                android:id="@+id/Tri_0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                />
+            <TextView
+
+                android:id="@+id/Tri_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                />
+            <TextView
+
+                android:id="@+id/Tri_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                />
+
+            <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorList"
+        android:text="Name"
+        android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

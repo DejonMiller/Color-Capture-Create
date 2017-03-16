@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/info_Popup"
+    android:background="@color/black_alpha_40">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoreInfo_Name"
+        android:textColorHint="@color/silver"
+        android:textColor="@color/silver"
+        android:hint="Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/silver"
+        android:textColorHint="@color/silver"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoreInfo_hex"
+        android:hint="Hex"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/silver"
+        android:textColorHint="@color/silver"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoreInfo_RGB"
+        android:hint="RGB"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoreInfo_CYMK"
+        android:textColor="@color/silver"
+        android:textColorHint="@color/silver"
+        android:hint="CYMK"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MoreInfo_HSV"
+        android:textColor="@color/silver"
+        android:textColorHint="@color/silver"
+        android:hint="HSV"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/silver"
+        android:id="@+id/MoreInfo_HSL"
+        android:textColorHint="@color/silver"
+        android:hint="HSL"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/silver"
+        android:textColorHint="@color/silver"
+        android:id="@+id/MoreInfo_LAB"
+        android:hint="LAB"/>
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:id="@+id/closeButton"
+        android:textColor="@color/silver"
+        android:text="[X]"
+        android:src="@drawable/ic_color_close"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

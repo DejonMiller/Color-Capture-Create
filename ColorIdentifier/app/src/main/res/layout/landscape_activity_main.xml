@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@color/black_alpha_40"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/black_alpha_40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hex: "
+            android:textColor="@color/silver"
+            android:id="@+id/touch_color"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RGB"
+            android:textColor="@color/silver"
+            android:text=" Color: "
+            android:id="@+id/touch_TrueColor"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/silver"
+            android:layout_gravity="right"
+            android:text =" RGB :"
+            android:id="@+id/RGB"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/opencv_tutorial_activity_surface_view"
+        android:layout_below="@+id/action_bar_main"
+        android:layout_above="@+id/action_bar_main_bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_bar_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:elevation="4dp"
+        android:popupTheme="@color/black_alpha_40"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_alignParentBottom="true"
+        android:theme="@color/toolbarTransparent"
+        android:background="@color/black_alpha_40">
+
+
+        <ImageButton
+            android:id="@+id/Add"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_color_add"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="left"/>
+
+        <Button
+            android:id="@+id/View_Palette_Button"
+            android:text="Palette"
+            android:layout_width="60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/silver"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ColorPreview"
+            android:gravity="center"
+            android:background="@color/black_alpha_40"/>
+
+       </android.support.v7.widget.Toolbar>
+</RelativeLayout>

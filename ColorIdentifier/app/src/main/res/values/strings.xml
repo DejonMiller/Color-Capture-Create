@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Color Capture</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="record_body_hint">Whats on your mind?</string>
+    <string name="record_details_label">Details</string>
+    <string name="record_title_label">Title</string>
+    <string name="record_solved_label">Solved?</string>
+    <string name="records_title">My Records</string>
+    <string name="date_picker_title">Date of record</string>
+    <string name="new_record">New record</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle">If you see something, say something.</string>
+    <string name="delete_record">Delete</string>
+</resources>

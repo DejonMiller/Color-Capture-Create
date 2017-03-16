@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_alpha_40">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/action_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@color/toolbarTransparent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:weightSum="1"
+        android:background="@color/black_alpha_40">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toPalette"
+            android:text="Palette"
+            android:textColor="@color/silver"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignTop="@+id/Blend_CheckBox"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Favorite"
+            android:text="Add to Palette"
+            android:src="@drawable/ic_color_add"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_weight="1.07"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Blend"
+            android:id="@+id/Blend_CheckBox"
+            android:checked="true"
+            android:textColor="@color/silver"
+            android:layout_alignTop="@+id/Favorite"
+            android:layout_alignStart="@+id/toPalette" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/FormatSwitcher"
+            android:textColor="@color/silver"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="ENTER RGB"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/action_bar_main"
+        android:id="@+id/relativeLayout">
+
+
+    <Spinner
+       android:layout_width="100dp"
+       android:layout_height="25dp"
+        android:text="Select from Favorites"
+       android:id="@+id/Favorite_Choices"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/Top_Hex">
+   </Spinner>
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:id="@+id/Format"
+        android:text="Select Format to blend"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Bottom_Hex"
+        android:layout_alignParentEnd="true">
+    </Spinner>
+<LinearLayout
+    android:layout_width="400dp"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/linearLayout4"
+    android:layout_above="@+id/Red_02"
+    >
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:id="@+id/seekBar1"
+        android:rotation="270"
+        android:layout_below="@+id/Favorite_Choices"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:id="@+id/seekBar2"
+        android:rotation="270"
+        android:layout_alignTop="@+id/seekBar1"
+        android:layout_toEndOf="@+id/Favorite_Choices" />
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:id="@+id/seekBar3"
+        android:rotation="270"
+        android:layout_alignTop="@+id/seekBar2"
+        android:layout_toEndOf="@+id/seekBar2" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/linearLayout5"
+
+        android:baselineAligned="false"
+        android:layout_above="@+id/Preview_View"
+       >
+
+        <SeekBar
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:id="@+id/seekBar4"
+            android:rotation="270"
+            android:layout_below="@+id/Favorite_Choices"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:id="@+id/seekBar5"
+            android:rotation="270"
+            android:layout_alignTop="@+id/seekBar1"
+            android:layout_toEndOf="@+id/Favorite_Choices" />
+
+        <SeekBar
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:id="@+id/seekBar6"
+            android:rotation="270"
+            android:layout_alignTop="@+id/seekBar2"
+            android:layout_toEndOf="@+id/seekBar2" />
+    </LinearLayout>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Red_01"
+        android:hint="R:"
+            android:layout_above="@+id/linearLayout4"
+            android:layout_alignStart="@+id/Red_02" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Green_01"
+        android:hint="G:"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Blue_01"
+        android:hint="B:"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignStart="@+id/Blue_02" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Red_02"
+        android:hint="R:"
+        android:layout_marginStart="29dp"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Green_02"
+        android:hint="G:"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/Blue_02"
+        android:hint="B:"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/Shade_Layout"
+        android:layout_above="@+id/Tint_Layout"
+        android:layout_alignParentStart="true">
+
+        <Button
+        android:id="@+id/Shade_0"
+        android:layout_width="75dp"
+        android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_below="@+id/Shade_4"
+            android:layout_toStartOf="@+id/Shade_1"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+    android:id="@+id/Shade_1"
+    android:layout_width="75dp"
+    android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Red_02"
+        android:layout_alignEnd="@+id/Favorite_Choices"
+            android:layout_below="@+id/Shade_4"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/Shade_2"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:layout_below="@+id/linearLayout5"
+            android:layout_alignStart="@+id/Blue_02"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/Shade_3"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/Green_02"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+        android:id="@+id/Shade_4"
+        android:layout_width="75dp"
+        android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_below="@+id/Shade_2"
+        android:layout_alignStart="@+id/Green_02"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:id="@+id/Tint_Layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/Tint_0"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/Tint_1"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/Tint_2"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/Tint_3"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/Tint_4"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/Preview_View"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/Shade_Layout"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Top_Hex"
+        android:hint="#"
+        android:layout_below="@+id/Favorite_Choices"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/Red_01"
+        android:singleLine="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/Bottom_Hex"
+            android:hint="#"
+            android:textIsSelectable="false"
+            android:layout_weight="1"
+            android:layout_below="@+id/Format"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/Blue_01"
+            android:singleLine="true" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
